@@ -15,9 +15,9 @@
 			<img src="img/logo-hotel.png">
 			<input type="text" name="email" id="email" placeholder="Correo">
 			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<button class="ui-btn ui-btn-active">
+			<a href="#main" class="ui-btn ui-btn-active">
 				Iniciar Sesión
-			</button>
+			</a>
 			<a href="#registro">¿Aún no tienes Cuenta?</a>
 		</div>
 		<div data-role="footer" data-position="fixed">
@@ -42,6 +42,188 @@
 		</div>
 		<div data-role="footer" data-position="fixed">
 		</div>
+	</div>
+
+	<div id="main" data-role="page">
+		<div data-role="header">
+			<div data-role="control-group" data-type="horizontal">
+				<a href="#menu" data-icon="bars" data-role="button" class="menu-btn"></a>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<img src="img/logo-hotel.png">
+			<p>Bienvenido Juan</p>
+			<a href="#reservar" class="ui-btn ui-btn-active">
+				¡Reserva Ya!
+			</a>
+		</div>
+		<div data-role="panel" id="menu" data-display="overlay">
+			<h3>Menú</h3>
+			<ul data-role="listview">
+				<li>Inicio</li>
+				<li>
+					<a href="#reservar">Reservar</a>
+				</li>
+				<li>Historial</li>
+				<li>Galería</li>
+				<li>Privacidad</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="reservar" data-role="page">
+		<div data-role="header">
+			<h1>Reservar</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<input type="text" name="name" id="name" placeholder="Nombre">
+			
+			<p>Tipo de Habitación</p>
+			<select>
+				<option>Sencilla</option>
+				<option>Doble</option>
+				<option>Suite</option>
+			</select>
+			
+			<p>Número de Personas</p>
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5 o más</option>
+			</select>
+
+			<p>Fecha de Entrada</p>
+			<fieldset class="ui-grid-b">
+			    <div class="ui-block-a">
+			    	<select>
+						<option>Día</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>23</option>
+						<option>24</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+			    </div>
+			    <div class="ui-block-b">
+			    	<select>
+						<option>Mes</option>
+						<option>Enero</option>
+						<option>Febrero</option>
+						<option>Marzo</option>
+						<option>Abril</option>
+						<option>Mayo</option>
+						<option>Junio</option>
+						<option>Julio</option>
+						<option>Agosto</option>
+						<option>Septiembre</option>
+						<option>Octubre</option>
+						<option>Noviembre</option>
+						<option>Diciembre</option>
+					</select>
+			    </div>
+			    <div class="ui-block-c">
+			    	<select>
+						<option>Año</option>
+						<option>2018</option>
+					</select>
+			    </div>
+			</fieldset>
+
+			<p>Fecha de Salida</p>
+			<fieldset class="ui-grid-b">
+			    <div class="ui-block-a">
+			    	<select>
+						<option>Día</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>23</option>
+						<option>24</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+			    </div>
+			    <div class="ui-block-b">
+			    	<select>
+						<option>Mes</option>
+						<option>Enero</option>
+						<option>Febrero</option>
+						<option>Marzo</option>
+						<option>Abril</option>
+						<option>Mayo</option>
+						<option>Junio</option>
+						<option>Julio</option>
+						<option>Agosto</option>
+						<option>Septiembre</option>
+						<option>Octubre</option>
+						<option>Noviembre</option>
+						<option>Diciembre</option>
+					</select>
+			    </div>
+			    <div class="ui-block-c">
+			    	<select>
+						<option>Año</option>
+						<option>2018</option>
+					</select>
+			    </div>
+			</fieldset>
+			<label>
+		        <input type="checkbox" name="checkbox-0 ">Aceptar Términos
+		    </label>
+
+		    <button class="ui-btn ui-btn-active">
+		    	Reservar
+		    </button>
 	</div>
 
 
